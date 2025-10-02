@@ -8,7 +8,7 @@
     "python",
     "pyrogram"
   ],
-    "buildpacks": [{
+  "buildpacks": [{
     "url": "heroku/python"
   }],
   "formation": {
@@ -18,13 +18,13 @@
     }
   },
   "addons": [
-      {
-         "options": {
-            "version": "12"
-         },
-         "plan": "heroku-postgresql"
+    {
+      "plan": "heroku-postgresql:essential-0",
+      "options": {
+        "version": "15"
       }
-   ],
+    }
+  ],
   "repository": "https://github.com/Wahyu213/String-Session-Bot",
   "env": {
     "ENVIRONMENT": {
